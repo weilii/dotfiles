@@ -72,6 +72,16 @@
 		fi \
 	}; f"
 
+ci = commit
+st = status -b
+co = checkout
+br = branch
+la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+ll = log --pretty=oneline --graph --decorate --abbrev-commit --all
+ls = log --oneline --stat --date=short
+ss = status -s -b
+
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
